@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Build Your Journey | Discover Madang</title>
+        <link rel="stylesheet" href="css/global.css">
+    </head>
+    
+    <body>
+        <header class="site-header">
+            <a class="brand" href="index.html">MADANG<span>PROVINCE</span></a>
+            <button class="menu-toggle">MENU</button>
+            <nav class="nav">
+                <a href="destinations.html">Destinations</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="stories.html">Stories</a>
+                <a href="plan.html">Plan</a>
+                <a class="nav-cta active" href="journey-builder.html">Build your journey</a>
+            </nav>
+        </header>
+        <main>
+            <section class="builder">
+                <div class="builder-intro">
+                    <p class="eyebrow">YOUR MADANG JOURNEY</p>
+                    <h1>Build something<br><em>unforgettable.</em></h1>
+                    <p>Choose your time and interests. We'll create a simple starting itinerary.</p>
+                </div>
+                <form id="journey-form" class="journey-form">
+                    <label>How long?
+                        <select id="days">
+                            <option value="3">3 days</option>
+                            <option value="5">5 days</option>
+                            <option value="7" selected>7 days</option>
+                            <option value="14">14 days</option>
+                        </select>
+                    </label>
+                    <fieldset>
+                        <legend>What interests you?</legend>
+                        <label><input type="checkbox" value="Ocean"> Ocean</label>
+                        <label><input type="checkbox" value="Culture"> Culture</label>
+                        <label><input type="checkbox" value="Adventure"> Adventure</label>
+                        <label><input type="checkbox" value="Wildlife"> Wildlife</label>
+                        <label><input type="checkbox" value="Culinary"> Culinary</label>
+                        <label><input type="checkbox" value="History"> History</label>
+                    </fieldset>
+                    <button class="button" type="submit">Create my journey ↗</button>
+                </form>
+            </section>
+            <section id="itinerary" class="itinerary hidden">
+                <p class="eyebrow">YOUR STARTING POINT</p>
+                <h2 id="itinerary-title">Your Madang journey</h2>
+                <div id="days-output"></div>                    <!--There is an empty space here-->
+                <a class="text-link" href="plan.html">Continue planning ↗</a>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div>
+                <a class="brand" href="index.html">MADANG<span>PROVINCE</span></a>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/journey.js"></script>
+    </body>
+</html>
